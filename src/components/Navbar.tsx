@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="hidden sm:flex text-white justify-center items-center w-full pl-[80px] xl:pl-[210px] pr-[100px] xl:pr-[240px]">
           <div className="flex relative w-full">
             <input
-              className="h-[20px] py-[19px] rounded-l-full px-4 border-[1.3px] border-[#303030] outline-0 focus:border-blue-500 text-[#303030] bg-[#121212] caret-white w-full mr-[65px] focus:-ml-[40px] focus:pl-[55px]"
+              className="h-[20px] py-[19px] rounded-l-full px-4 border-[1.3px] border-[#303030] placeholder:text-white/50 outline-0 focus:border-blue-500 text-white bg-[#121212] caret-white w-full mr-[65px] focus:-ml-[40px] focus:pl-[55px]"
               placeholder="Search"
               onFocus={() => setIsInputFocussed(true)}
               onBlur={() => setIsInputFocussed(false)}
