@@ -10,7 +10,7 @@ import Image from 'next/image';
 const Navbar = () => {
   const [isInputFocussed, setIsInputFocussed] = useState<boolean>(false);
   return (
-    <div className="flex bg-[#0F0F0F] h-[57px] w-full px-[8px] lg:px-[15px] items-center sticky py-2 top-0">
+    <div className="flex bg-[#0F0F0F] h-[57px] w-full px-[8px] lg:px-[15px] items-center sticky py-2 top-0 z-50">
       <div className="flex items-center gap-5 w-full">
         <FiMenu className="text-white h-[24px] w-[24px] m-[8px] shrink-0 hover:cursor-pointer" />
         <div className="relative shrink-0 hover:cursor-pointer">
