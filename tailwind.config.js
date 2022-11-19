@@ -12,7 +12,7 @@ module.exports = {
       '2xl': '1536px',
     },
   },
-  plugins: [require('tailwind-scrollbar')],
+  plugins: [require('tailwind-scrollbar'), require('@tailwindcss/line-clamp')],
   variants: {
     scrollbar: ['rounded'],
   },
