@@ -10,7 +10,7 @@ import Image from 'next/image';
 const Navbar = () => {
   const [isInputFocussed, setIsInputFocussed] = useState<boolean>(false);
   return (
-    <div className="flex h-[57px] w-full px-[8px] lg:px-[15px] items-center">
+    <div className="flex bg-[#0F0F0F] h-[57px] w-full px-[8px] lg:px-[15px] items-center sticky py-2 top-0">
       <div className="flex items-center gap-5 w-full">
         <FiMenu className="text-white h-[24px] w-[24px] m-[8px] shrink-0 hover:cursor-pointer" />
         <div className="relative shrink-0 hover:cursor-pointer">
@@ -32,7 +32,7 @@ const Navbar = () => {
               <AiOutlineSearch className="text-white h-[24px] w-[24px] p-[0.5px] shrink-0 hover:cursor-pointer" />
             </button>
           </div>
-          <MdMic className="text-white h-[40px] w-[40px] ml-[20px] p-[8px] shrink-0 hover:cursor-pointer bg-[#181818] rounded-full" />
+          <MdMic className="text-white h-[40px] w-[40px] ml-[20px] p-[8px] shrink-0 hover:cursor-pointer bg-[#181818] rounded-full hover:bg-[#3F3F3F]" />
         </div>
       </div>
       <div className="flex justify-end w-fit gap-5 xs:gap-3.5 sm:gap-8 items-center">
@@ -40,7 +40,7 @@ const Navbar = () => {
         <MdMic className="hidden xs:block sm:hidden bg-[#212121] text-white h-[40px] w-[40px] p-[8px] shrink-0 hover:cursor-pointer" />
         <RiVideoAddLine className="text-white h-[24px] w-[24px] p-[0.5px] shrink-0 hover:cursor-pointer" />
         <BiBell className="hidden xs:block text-white h-[24px] w-[24px] p-[0.5px] shrink-0 hover:cursor-pointer" />
-        <Image src="/user.png" alt="user" width="600" height="100" className="rounded-full w-[32px] h-[32px] mr-[8px] hover:cursor-pointer" priority={true} />
+        <Image src="/user.png" alt="user" width="600" height="100" className="rounded-full w-[32px] h-[32px] mr-[25px] hover:cursor-pointer" priority={true} />
       </div>
     </div>
   );
