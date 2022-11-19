@@ -1,5 +1,3 @@
-import React from 'react';
-
 const YTLogo = ({ className }: { className?: string }) => {
   return (
     <svg viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" focusable="false" className={`fill-white w-[91px] h-[21px] ${className}`}>

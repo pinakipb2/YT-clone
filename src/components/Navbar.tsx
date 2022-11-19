@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import { FiMenu } from 'react-icons/fi';
-import { AiOutlineSearch } from 'react-icons/ai';
-import { RiVideoAddLine } from 'react-icons/ri';
-import { MdMic } from 'react-icons/md';
-import { BiBell } from 'react-icons/bi';
-import YTLogo from './YTLogo';
 import Image from 'next/image';
+import { useState } from 'react';
+import { AiOutlineSearch } from 'react-icons/ai';
+import { MdMic } from 'react-icons/md';
+import Bell from './SVGS/Bell';
+import Camera from './SVGS/Camera';
+import Menu from './SVGS/Menu';
+import YTLogo from './SVGS/YTLogo';
 
 const Navbar = () => {
   const [isInputFocussed, setIsInputFocussed] = useState<boolean>(false);
   return (
-    <div className="flex bg-[#0F0F0F] h-[57px] w-full px-[8px] lg:px-[15px] items-center sticky py-2 top-0 z-50">
+    <div className="flex bg-[#0F0F0F] h-[57px] w-full px-[8px] md:px-[19px] items-center sticky py-2 top-0 z-50">
       <div className="flex items-center gap-5 w-full">
-        <FiMenu className="text-white h-[24px] w-[24px] m-[8px] shrink-0 hover:cursor-pointer" />
+        <Menu className="text-white h-[24px] w-[24px] m-[8px] shrink-0 hover:cursor-pointer" />
         <div className="relative shrink-0 hover:cursor-pointer">
           <YTLogo />
           <span className="absolute text-[10px] text-white/60 -top-2 -right-3">IN</span>
@@ -35,11 +35,11 @@ const Navbar = () => {
           <MdMic className="text-white h-[40px] w-[40px] ml-[20px] p-[8px] shrink-0 hover:cursor-pointer bg-[#181818] rounded-full hover:bg-[#3F3F3F]" />
         </div>
       </div>
-      <div className="flex justify-end w-fit gap-5 xs:gap-3.5 sm:gap-8 items-center">
+      <div className="flex justify-end w-fit gap-5 xs:gap-5 sm:gap-8 items-center">
         <AiOutlineSearch className="sm:hidden text-white h-[24px] w-[24px] ml-[20px] p-[0.5px] shrink-0 hover:cursor-pointer" />
         <MdMic className="hidden xs:block sm:hidden bg-[#212121] text-white h-[40px] w-[40px] p-[8px] shrink-0 hover:cursor-pointer" />
-        <RiVideoAddLine className="text-white h-[24px] w-[24px] p-[0.5px] shrink-0 hover:cursor-pointer" />
-        <BiBell className="hidden xs:block text-white h-[24px] w-[24px] p-[0.5px] shrink-0 hover:cursor-pointer" />
+        <Camera className="text-white h-[25px] w-[25px] p-[0.5px] shrink-0 hover:cursor-pointer" />
+        <Bell className="hidden xs:block text-white h-[24px] w-[24px] p-[0.5px] shrink-0 hover:cursor-pointer" />
         <Image src="/user.png" alt="user" width="600" height="100" className="rounded-full w-[32px] h-[32px] mr-[25px] hover:cursor-pointer" priority={true} />
       </div>
     </div>

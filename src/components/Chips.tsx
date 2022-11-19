@@ -1,4 +1,3 @@
-import React from 'react';
 import cuid from 'cuid';
 import { MdOutlineArrowForwardIos } from 'react-icons/md';
 
@@ -27,7 +26,7 @@ const Chips = () => {
     { id: cuid(), name: 'Cartoon' },
   ];
   return (
-    <div className="flex bg-[#0F0F0F] w-[100] h-[57px] gap-3 px-[10px] py-[14px] pb-5 pl-6 items-center sticky top-[56px] z-50">
+    <div className="flex bg-[#0F0F0F] w-full h-[57px] gap-3 px-[10px] py-[14px] pb-5 pl-6 items-center sticky top-[56px] z-50">
       {chips.map((chip, idx) => (
         <div key={chip.id} className={`shrink-0 ${idx === 0 ? 'text-black bg-[#F1F1F1]' : 'text-white bg-[#272727] hover:bg-[#3F3F3F]'} rounded-lg px-3 py-[5px] text-sm hover:cursor-pointer`}>
           {chip.name}
