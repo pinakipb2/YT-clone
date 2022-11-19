@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import { useState } from 'react';
-import { AiOutlineSearch } from 'react-icons/ai';
 import { MdMic } from 'react-icons/md';
 import Bell from './SVGS/Bell';
 import Camera from './SVGS/Camera';
 import Menu from './SVGS/Menu';
+import Search from './SVGS/Search';
 import YTLogo from './SVGS/YTLogo';
 
 const Navbar = () => {
@@ -26,17 +26,17 @@ const Navbar = () => {
               onBlur={() => setIsInputFocussed(false)}
             />
             <div className={`${isInputFocussed ? '' : 'hidden'} flex items-center justify-center absolute h-full w-[65px] -left-[40px] rounded-r-full outline-0`}>
-              <AiOutlineSearch className="text-white h-[24px] w-[24px] p-[1.5px] shrink-0 hover:cursor-pointer" />
+              <Search className="text-white h-[24px] w-[24px] p-[1.5px] shrink-0 hover:cursor-pointer" />
             </div>
             <button className="flex items-center justify-center absolute bg-[#222222] h-full w-[65px] right-[0px] rounded-r-full outline-0 border-[1.3px] border-[#303030] border-l-0">
-              <AiOutlineSearch className="text-white h-[24px] w-[24px] p-[0.5px] shrink-0 hover:cursor-pointer" />
+              <Search className="text-white/80 h-[24px] w-[24px] p-[0.5px] shrink-0 hover:cursor-pointer" />
             </button>
           </div>
           <MdMic className="text-white h-[40px] w-[40px] ml-[20px] p-[8px] shrink-0 hover:cursor-pointer bg-[#181818] rounded-full hover:bg-[#3F3F3F]" />
         </div>
       </div>
       <div className="flex justify-end w-fit gap-5 xs:gap-5 sm:gap-8 items-center">
-        <AiOutlineSearch className="sm:hidden text-white h-[24px] w-[24px] ml-[20px] p-[0.5px] shrink-0 hover:cursor-pointer" />
+        <Search className="sm:hidden text-white h-[25px] w-[25px] ml-[20px] p-[0.5px] shrink-0 hover:cursor-pointer" />
         <MdMic className="hidden xs:block sm:hidden bg-[#212121] text-white h-[40px] w-[40px] p-[8px] shrink-0 hover:cursor-pointer" />
         <Camera className="text-white h-[25px] w-[25px] p-[0.5px] shrink-0 hover:cursor-pointer" />
         <Bell className="hidden xs:block text-white h-[24px] w-[24px] p-[0.5px] shrink-0 hover:cursor-pointer" />
