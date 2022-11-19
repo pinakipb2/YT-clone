@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 import { MdMic } from 'react-icons/md';
 import Bell from './SVGS/Bell';
@@ -13,10 +14,12 @@ const Navbar = () => {
     <div className="flex bg-[#0F0F0F] h-[57px] w-full px-[8px] md:px-[19px] items-center sticky py-2 top-0 z-50">
       <div className="flex items-center gap-5 w-full">
         <Menu className="text-white h-[24px] w-[24px] m-[8px] shrink-0 hover:cursor-pointer" />
-        <div className="relative shrink-0 hover:cursor-pointer">
-          <YTLogo />
-          <span className="absolute text-[10px] text-white/60 -top-2 -right-3">IN</span>
-        </div>
+        <Link href="/">
+          <div className="relative shrink-0 hover:cursor-pointer">
+            <YTLogo />
+            <span className="absolute text-[10px] text-white/60 -top-2 -right-3">IN</span>
+          </div>
+        </Link>
         <div className="hidden sm:flex text-white justify-center items-center w-full pl-[80px] xl:pl-[210px] pr-[100px] xl:pr-[240px]">
           <div className="flex relative w-full">
             <input
