@@ -1,21 +1,33 @@
+import Image from 'next/image';
+import Fashion from './SVGS/Fashion';
 import Feedback from './SVGS/Feedback';
+import Gaming from './SVGS/Gaming';
 import Help from './SVGS/Help';
 import History from './SVGS/History';
 import Home from './SVGS/Home';
 import Later from './SVGS/Later';
+import Learning from './SVGS/Learning';
 import Library from './SVGS/Library';
 import LikedVideos from './SVGS/LikedVideos';
 import Live from './SVGS/Live';
 import More from './SVGS/More';
+import Movies from './SVGS/Movies';
+import Music from './SVGS/Music';
+import News from './SVGS/News';
 import Report from './SVGS/Report';
 import Settings from './SVGS/Settings';
 import Shorts from './SVGS/Shorts';
+import Sports from './SVGS/Sports';
 import Subscriptions from './SVGS/Subscriptions';
 import Trending from './SVGS/Trending';
 import YourVideos from './SVGS/YourVideos';
+import YTCreatorStudio from './SVGS/YTCreatorStudio';
 import YTKids from './SVGS/YTKids';
+import YTLive from './SVGS/YTLive';
 import YTMusic from './SVGS/YTMusic';
+import YTPremium from './SVGS/YTPremium';
 import YTTV from './SVGS/YTTV';
+import { GoPrimitiveDot } from 'react-icons/go';
 
 const Divider = () => {
   return <div className="hidden xl:block bg-[#323232] h-[0.8px] w-[85%] my-2.5 shrink-0"></div>;
@@ -81,40 +93,37 @@ const Sidebar = () => {
       <div className="hidden xl:flex items-center w-full pl-6">
         <span className="text-base font-medium">Subscriptions</span>
       </div>
-      <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
-        <Library className="w-[24px] h-[24px] justify-start" />
-        <span className="text-sm font-medium">Show more</span>
-        <Live className="w-[18px] h-[18px] justify-start" />
+      <div className="hidden xl:flex items-center hover:cursor-pointer w-full justify-between pl-6 pr-4 gap-[0px]">
+        <Image src="/user.png" alt="user" width="600" height="100" className="rounded-full w-[25px] h-[25px] hover:cursor-pointer" priority={true} />
+        <span className="text-sm font-medium -ml-[30px]">Show more</span>
+        <Live className="w-[18px] h-[18px]" />
       </div>
-      <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
-        <Library className="w-[24px] h-[24px] justify-start" />
-        <span className="text-sm font-medium">Show more</span>
-        <Library className="w-[24px] h-[24px] justify-start" />
+      <div className="hidden xl:flex items-center hover:cursor-pointer w-full justify-between pl-6 pr-4 gap-[0px]">
+        <Image src="/user.png" alt="user" width="600" height="100" className="rounded-full w-[25px] h-[25px] hover:cursor-pointer" priority={true} />
+        <span className="text-sm font-medium -ml-[35px]">Show more</span>
+        <GoPrimitiveDot className="w-[10px] h-[8px] mr-[4px] fill-[#3EA6FF]" />
       </div>
-      <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
-        <Library className="w-[24px] h-[24px] justify-start" />
-        <span className="text-sm font-medium">Show more</span>
-        <Library className="w-[24px] h-[24px] justify-start" />
+      <div className="hidden xl:flex items-center hover:cursor-pointer w-full justify-between pl-6 pr-4 gap-[0px]">
+        <Image src="/user.png" alt="user" width="600" height="100" className="rounded-full w-[25px] h-[25px] hover:cursor-pointer" priority={true} />
+        <span className="text-sm font-medium -ml-[35px]">Show more</span>
+        <GoPrimitiveDot className="w-[10px] h-[8px] mr-[4px] fill-[#3EA6FF]" />
       </div>
-      <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
-        <Library className="w-[24px] h-[24px] justify-start" />
-        <span className="text-sm font-medium">Show more</span>
-        <Library className="w-[24px] h-[24px] justify-start" />
+      <div className="hidden xl:flex items-center hover:cursor-pointer w-full justify-between pl-6 pr-4 gap-[0px]">
+        <Image src="/user.png" alt="user" width="600" height="100" className="rounded-full w-[25px] h-[25px] hover:cursor-pointer" priority={true} />
+        <span className="text-sm font-medium -ml-[35px]">Show more</span>
+        <GoPrimitiveDot className="w-[10px] h-[8px] mr-[4px] fill-[#3EA6FF]" />
       </div>
-      <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
-        <Library className="w-[24px] h-[24px] justify-start" />
-        <span className="text-sm font-medium">Show more</span>
-        <Library className="w-[24px] h-[24px] justify-start" />
+      <div className="hidden xl:flex items-center hover:cursor-pointer w-full justify-start pl-6 pr-4 gap-[0px]">
+        <Image src="/user.png" alt="user" width="600" height="100" className="rounded-full w-[25px] h-[25px] hover:cursor-pointer" priority={true} />
+        <span className="text-sm font-medium ml-[22px]">Show more</span>
       </div>
-      <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
-        <Library className="w-[24px] h-[24px] justify-start" />
-        <span className="text-sm font-medium">Show more</span>
-        <Library className="w-[24px] h-[24px] justify-start" />
+      <div className="hidden xl:flex items-center hover:cursor-pointer w-full justify-start pl-6 pr-4 gap-[0px]">
+        <Image src="/user.png" alt="user" width="600" height="100" className="rounded-full w-[25px] h-[25px] hover:cursor-pointer" priority={true} />
+        <span className="text-sm font-medium ml-[22px]">Show more</span>
       </div>
-      <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
-        <Library className="w-[24px] h-[24px] justify-start" />
-        <span className="text-sm font-medium">Show more</span>
-        <Library className="w-[24px] h-[24px] justify-start" />
+      <div className="hidden xl:flex items-center hover:cursor-pointer w-full justify-start pl-6 pr-4 gap-[0px]">
+        <Image src="/user.png" alt="user" width="600" height="100" className="rounded-full w-[25px] h-[25px] hover:cursor-pointer" priority={true} />
+        <span className="text-sm font-medium ml-[22px]">Show more</span>
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
         <More className="w-[24px] h-[24px] justify-start" />
@@ -129,35 +138,35 @@ const Sidebar = () => {
         <span className="text-sm font-medium">Trending</span>
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
-        <Library className="w-[24px] h-[24px] justify-start" />
+        <Music className="w-[24px] h-[24px] justify-start" />
         <span className="text-sm font-medium">Music</span>
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
-        <Library className="w-[24px] h-[24px] justify-start" />
+        <Movies className="w-[24px] h-[24px] justify-start" />
         <span className="text-sm font-medium">Movies</span>
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
-        <Library className="w-[24px] h-[24px] justify-start" />
+        <YTLive className="w-[24px] h-[24px] justify-start" />
         <span className="text-sm font-medium">Live</span>
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
-        <Library className="w-[24px] h-[24px] justify-start" />
+        <Gaming className="w-[24px] h-[24px] justify-start" />
         <span className="text-sm font-medium">Gaming</span>
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
-        <Library className="w-[24px] h-[24px] justify-start" />
+        <News className="w-[24px] h-[24px] justify-start" />
         <span className="text-sm font-medium">News</span>
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
-        <Library className="w-[24px] h-[24px] justify-start" />
+        <Sports className="w-[24px] h-[24px] justify-start" />
         <span className="text-sm font-medium">Sports</span>
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
-        <Library className="w-[24px] h-[24px] justify-start" />
+        <Learning className="w-[24px] h-[24px] justify-start" />
         <span className="text-sm font-medium">Learning</span>
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
-        <Library className="w-[24px] h-[24px] justify-start" />
+        <Fashion className="w-[24px] h-[24px] justify-start" />
         <span className="text-sm font-medium">Fashion & Beauty</span>
       </div>
       <Divider />
@@ -165,11 +174,11 @@ const Sidebar = () => {
         <span className="text-base font-medium">More from YouTube</span>
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
-        <Library className="w-[24px] h-[24px] justify-start" />
+        <YTPremium className="w-[24px] h-[24px] justify-start" />
         <span className="text-sm font-medium">YouTube Premium</span>
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
-        <Library className="w-[24px] h-[24px] justify-start" />
+        <YTCreatorStudio className="w-[24px] h-[24px] justify-start" />
         <span className="text-sm font-medium">Creator Studio</span>
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
