@@ -14,6 +14,7 @@ import Subscriptions from './SVGS/Subscriptions';
 import Trending from './SVGS/Trending';
 import YourVideos from './SVGS/YourVideos';
 import YTKids from './SVGS/YTKids';
+import YTMusic from './SVGS/YTMusic';
 import YTTV from './SVGS/YTTV';
 
 const Divider = () => {
@@ -172,7 +173,7 @@ const Sidebar = () => {
         <span className="text-sm font-medium">Creator Studio</span>
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
-        <Library className="w-[24px] h-[24px] justify-start" />
+        <YTMusic className="w-[24px] h-[24px] justify-start" />
         <span className="text-sm font-medium">YouTube Music</span>
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
