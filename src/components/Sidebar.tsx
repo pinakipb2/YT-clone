@@ -95,35 +95,35 @@ const Sidebar = () => {
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full justify-between pl-6 pr-4 gap-[0px]">
         <Image src="/user.png" alt="user" width="600" height="100" className="rounded-full w-[25px] h-[25px] hover:cursor-pointer" priority={true} />
-        <span className="text-sm font-medium -ml-[30px]">Show more</span>
+        <span className="text-sm font-medium -ml-[30px]">Channel 1</span>
         <Live className="w-[18px] h-[18px]" />
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full justify-between pl-6 pr-4 gap-[0px]">
         <Image src="/user.png" alt="user" width="600" height="100" className="rounded-full w-[25px] h-[25px] hover:cursor-pointer" priority={true} />
-        <span className="text-sm font-medium -ml-[35px]">Show more</span>
+        <span className="text-sm font-medium -ml-[35px]">Channel 2</span>
         <GoPrimitiveDot className="w-[10px] h-[8px] mr-[4px] fill-[#3EA6FF]" />
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full justify-between pl-6 pr-4 gap-[0px]">
         <Image src="/user.png" alt="user" width="600" height="100" className="rounded-full w-[25px] h-[25px] hover:cursor-pointer" priority={true} />
-        <span className="text-sm font-medium -ml-[35px]">Show more</span>
+        <span className="text-sm font-medium -ml-[35px]">Channel 3</span>
         <GoPrimitiveDot className="w-[10px] h-[8px] mr-[4px] fill-[#3EA6FF]" />
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full justify-between pl-6 pr-4 gap-[0px]">
         <Image src="/user.png" alt="user" width="600" height="100" className="rounded-full w-[25px] h-[25px] hover:cursor-pointer" priority={true} />
-        <span className="text-sm font-medium -ml-[35px]">Show more</span>
+        <span className="text-sm font-medium -ml-[35px]">Channel 4</span>
         <GoPrimitiveDot className="w-[10px] h-[8px] mr-[4px] fill-[#3EA6FF]" />
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full justify-start pl-6 pr-4 gap-[0px]">
         <Image src="/user.png" alt="user" width="600" height="100" className="rounded-full w-[25px] h-[25px] hover:cursor-pointer" priority={true} />
-        <span className="text-sm font-medium ml-[22px]">Show more</span>
+        <span className="text-sm font-medium ml-[26px]">Channel 5</span>
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full justify-start pl-6 pr-4 gap-[0px]">
         <Image src="/user.png" alt="user" width="600" height="100" className="rounded-full w-[25px] h-[25px] hover:cursor-pointer" priority={true} />
-        <span className="text-sm font-medium ml-[22px]">Show more</span>
+        <span className="text-sm font-medium ml-[26px]">Channel 6</span>
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full justify-start pl-6 pr-4 gap-[0px]">
         <Image src="/user.png" alt="user" width="600" height="100" className="rounded-full w-[25px] h-[25px] hover:cursor-pointer" priority={true} />
-        <span className="text-sm font-medium ml-[22px]">Show more</span>
+        <span className="text-sm font-medium ml-[26px]">Channel 7</span>
       </div>
       <div className="hidden xl:flex items-center hover:cursor-pointer w-full pl-6 gap-[25px]">
         <More className="w-[24px] h-[24px] justify-start" />
